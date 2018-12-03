@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/txtLocationShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location update here!!"
+            android:layout_above="@+id/btnRequestLocation"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"/>
+    <Button
+
+            android:text="Request Single location update"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRequestLocation"/>
+
+    <Button
+            android:text="Start request location every minute"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnRequestLocation"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRequestLocationPeriodically"/>
+
+</RelativeLayout>
